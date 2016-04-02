@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>docker-toolbox</id>
+    <title>docker-toolbox (Install)</title>
+    <version>1.10.3</version>
+    <authors>Docker</authors>
+    <owners>Mike Wyatt</owners>
+    <summary>The Docker Toolbox installs everything you need to get started with Docker on Mac OS X and Windows. It includes the Docker client, Compose, Machine, Kitematic, and VirtualBox.</summary>
+    <description>The Docker Toolbox installs everything you need to get started with Docker on Mac OS X and Windows. It includes the Docker client, Compose, Machine, Kitematic, and VirtualBox.</description>
+    <projectUrl>https://www.docker.com/products/docker-toolbox</projectUrl>
+    <packageSourceUrl>https://github.com/docker/toolbox</packageSourceUrl>
+    <!--<projectSourceUrl></projectSourceUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
+    <bugTrackerUrl></bugTrackerUrl>-->
+    <tags>docker-toolbox admin docker</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/docker/toolbox/blob/master/LICENSE/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/docker-toolbox.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+    <!--<provides></provides>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
