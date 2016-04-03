@@ -18,4 +18,5 @@ $packageArgs = @{
   checksumType64= 'md5'
 }
 
+Install-ChocolateyPath "C:\Program Files\Docker Toolbox" Machine
 Install-ChocolateyPackage @packageArgs
