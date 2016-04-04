@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
-$packageName= 'docker-toolbox'
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://github.com/docker/toolbox/releases/download/v1.10.3/DockerToolbox-1.10.3.exe'
+$packageName = 'docker-toolbox'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url64 = 'https://github.com/docker/toolbox/releases/download/v1.10.3/DockerToolbox-1.10.3.exe'
 
 $params = $env:chocolateyPackageParameters
 $components = 'Docker,DockerMachine,DockerCompose'
@@ -20,19 +20,20 @@ if (-Not ("$params" -match "/SkipGit")) {
 }
 
 $packageArgs = @{
-  packageName   = $packageName
+  packageName = $packageName
   unzipLocation = $toolsDir
-  fileType      = 'EXE'
-  url           = $url
-  url64bit      = $url64
-  silentArgs    = "/COMPONENTS='$components' $silentArgs"
-  validExitCodes= @(0)
-  softwareName  = 'Docker Toolbox*'
-  checksum      = ''
-  checksumType  = 'md5'
-  checksum64    = ''
-  checksumType64= 'md5'
+  fileType = 'EXE'
+  url = $url
+  url64bit = $url64
+  silentArgs = "/COMPONENTS='$components' $silentArgs"
+  validExitCodes = @(0)
+  softwareName = 'Docker Toolbox*'
+  checksum = ''
+  checksumType = 'md5'
+  checksum64 = ''
+  checksumType64 = 'md5'
 }
 
 Install-ChocolateyPath "C:\Program Files\Docker Toolbox" Machine
+Wrte-Host "Installing with components: $components"
 Install-ChocolateyPackage @packageArgs
