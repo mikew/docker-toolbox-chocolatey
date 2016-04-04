@@ -35,5 +35,5 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPath "C:\Program Files\Docker Toolbox" Machine
-Wrte-Host "Installing with components: $components"
+Write-Host "Installing with components: $components"
 Install-ChocolateyPackage @packageArgs
